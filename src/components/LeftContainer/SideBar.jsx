@@ -41,7 +41,7 @@ const SideBar = ({onPostClick}) => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-               focusTextarea();
+              focusTextarea();
             }}
             className="bg-white w-8 flex justify-center items-center rounded-3xl text-sm text-black p-[2px] mt-5"
           >
@@ -61,17 +61,17 @@ const SideBar = ({onPostClick}) => {
             Post
           </a>
         </div>
-        <div className="user flex flex-row mt-10 gap-3 items-center">
-          <div className="userlogo flex w-full justify-center items-center">
+          <div class="user flex flex-row mt-10 gap-3 items-center">
+            <div class="userlogo">
             <img
               className="rounded-[50%] w-9 p-1 md:w-10"
-              src="https://pbs.twimg.com/profile_images/1614570387144323077/IoK5i5fd_x96.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg"
               alt="userlogo"
             />
           </div>
           <div className="usernames hidden md:block">
-            <p className="font-semibold">@kaivalya_775</p>
-            <p className="font-light text-zinc-600">@kaival4</p>
+            <p className="font-semibold">XYZ</p>
+            <p className="font-light text-zinc-600">@xxxxxxxx</p>
           </div>
           <div className="usermore hidden md:block md:w-1/3 md:pr-4">
             <span className="material-symbols-outlined font-light">

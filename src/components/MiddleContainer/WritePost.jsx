@@ -76,6 +76,7 @@ const WritePost = () => {
               ref={textareaRef}
               onFocus={() => setPublic(true)}
               onSubmit={() => setPublic(false)}
+              onBlur={()=>setPublic(false)}
               onInput={() => setTyping(true)}
               className="resize-none bg-transparent outline-none text-xl font-light"
               placeholder="What's happening?"
@@ -104,7 +105,8 @@ const WritePost = () => {
                 Public ? "block" : "hidden"
               } mb-2 border-b-[1px] border-zinc-800`}
             >
-              <button className="text-[12px] font-semibold gap-1 flex justify-center items-center p-[2px] mb-1 hover:rounded-2xl hover:bg-sky-950 text-sky-500">
+              <button 
+              className="text-[12px] font-semibold gap-1 flex justify-center items-center p-[2px] mb-1 hover:rounded-2xl hover:bg-sky-950 text-sky-500">
                 <span
                   className="material-symbols-outlined "
                   style={{ fontSize: 15 }}
